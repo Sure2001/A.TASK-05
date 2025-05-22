@@ -1,0 +1,9 @@
+<h2>User List</h2>
+<ul>
+  <li *ngFor="let user of users">
+    <strong>{{ user.name }}</strong><br>
+    📧 {{ user.email }}<br>
+    📞 {{ user.phone }}
+    <hr>
+  </li>
+</ul>
