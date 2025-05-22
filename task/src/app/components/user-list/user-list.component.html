@@ -2,8 +2,11 @@
 <ul>
   <li *ngFor="let user of users">
     <strong>{{ user.name }}</strong><br>
+    {{ user.username }}<br>
     📧 {{ user.email }}<br>
-    📞 {{ user.phone }}
+    📞 {{ user.phone }}<br>
+    🏠 {{ user.address.street }}<br>
+        {{ user.address.city }}, {{ user.address.zipcode }}<br>
     <hr>
   </li>
 </ul>
